@@ -7,10 +7,16 @@
     android:orientation="vertical"
     tools:context=".HomeScreenActivity">
 
-    <SearchView
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search"/>
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:padding="5dp"
+            android:queryHint="Search" />
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
