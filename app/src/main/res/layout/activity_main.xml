@@ -4,18 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/colorAccent"
-    android:orientation="vertical">
+    android:layout_gravity="center"
+    android:background="@drawable/bi"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/logo"
-        android:visibility="gone"
-        android:layout_gravity="center"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:src="@drawable/ic_launcher_background"
-        android:layout_height="wrap_content" />
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABHAYA - Be Fearless"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>
