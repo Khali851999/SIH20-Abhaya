@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -28,5 +28,15 @@
         android:textSize="35dp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Whether you are an expecting mother or a confused girl who has just gotten in thenphase of puberty - this is one stop solution"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-</RelativeLayout>
+
+</LinearLayout>
