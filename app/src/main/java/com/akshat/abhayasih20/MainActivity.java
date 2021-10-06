@@ -31,7 +31,18 @@ public class MainActivity extends AppCompatActivity {
         logo.setVisibility(View.VISIBLE);
 
         bounce_anim.setAnimationListener(new Animation.AnimationListener() {
+
+             @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+            
             @Override
+            public void onAnimationEnd(Animation animation) {
+
+            }
+            
+             @Override
             public void onAnimationStart(Animation animation) {
 
                 new Handler().postDelayed(new Runnable() {
@@ -43,15 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 }, 3000);
             }
 
-            @Override
-            public void onAnimationEnd(Animation animation) {
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-
-            }
+         
         });
 
 
