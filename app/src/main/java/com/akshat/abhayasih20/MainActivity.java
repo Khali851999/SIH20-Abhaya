@@ -34,13 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAnimationStart(Animation animation) {
 
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        startActivity(new Intent(MainActivity.this, HomeScreenActivity.class));
-                        finish();
-                    }
-                }, 3000);
+             
             }
 
             @Override
@@ -50,7 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationRepeat(Animation animation) {
-
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent(HomeScreenActivity.this, MainActivity.class));
+                        finish();
+                    }
+                }, 3000);
             }
         });
 
